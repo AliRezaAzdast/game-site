@@ -50,6 +50,7 @@
 }
 
 @layer utilities {
+  
   .animated-word {
     @apply font-zentry font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
@@ -109,11 +110,11 @@
   }
 
   .bento-tilt_1 {
-    @apply relative overflow-hidden rounded-md transition-transform duration-300 ease-out;
+    @apply overflow-hidden col-span-1 row-span-1 rounded-md transition-transform duration-300 ease-out;
   }
 
   .bento-tilt_2 {
-    @apply relative col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
+    @apply col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
   }
 
   .bento-title {
@@ -273,4 +274,11 @@
     transform: translateY(66%) scale(0.65);
     opacity: 0.8;
   }
+}
+
+
+
+.special-font b {
+  font-family: "Zentry";
+  font-feature-settings: "ss01" on;
 }
