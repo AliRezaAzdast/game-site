@@ -108,6 +108,10 @@
     @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
   }
 
+  .bento-tilt_1 {
+    @apply relative overflow-hidden rounded-md transition-transform duration-300 ease-out;
+  }
+
   .bento-tilt_2 {
     @apply relative col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
   }
