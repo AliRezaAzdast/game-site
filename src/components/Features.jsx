@@ -1,4 +1,4 @@
-import { useState, useRef , useEffect } from "react";
+import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
 const BentoTilt = ({ children, className = "" }) => {

@@ -50,20 +50,27 @@
 }
 
 @layer utilities {
+  .story-img-container {
+    @apply relative md:h-dvh h-[90vh] w-full;
+    filter: url("#flt_tag");
+  }
+
+  .story-img-mask {
+    @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5;
+    clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
+  }
+
+  .story-img-content {
+    @apply absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px];
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+  }
   
   .animated-word {
-    @apply font-zentry font-black opacity-0;
+    @apply font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;
     font-feature-settings: "ss01" on;
-    font-family: "Zentry";
-    -webkit-transform: translate3d(10px, 51px, -60px) rotateY(60deg)
-      rotateX(-40deg);
-    -moz-transform: translate3d(10px, 51px, -60px) rotateY(60deg)
-      rotateX(-40deg);
-    -ms-transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
-    -o-transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
   }
 
   .test-text {
