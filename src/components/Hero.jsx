@@ -32,6 +32,7 @@ const Hero = () => {
       setIsLoading(false)
     }
   },[loadedVideos])
+  
   useGSAP(
     () => {
       if (hasClicked) {

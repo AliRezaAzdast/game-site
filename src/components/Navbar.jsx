@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Button from './button'
+import Button from './Button'
 import gsap from 'gsap'
 import { TiLocationArrow } from 'react-icons/ti'
 import { useWindowScroll } from 'react-use';
@@ -63,7 +63,7 @@ const Navbar = () => {
             title='Product'
             rightIcon={<TiLocationArrow/>}
             containerClass='bg-blue-50 md:flex hidden items-center justify-center gap-1'
-            ></Button>
+            />
           </div>
           <div className='flex h-full items-center'>
             <div className='hidden md:block'>
